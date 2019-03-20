@@ -55,12 +55,14 @@ table {
 
 html, body {
     height: 100%;
+    font-size: 62.5%;
 }
 
 
 /* Colors */
 
 @yellow: #D4C512;
+@green: #708B30;
 
 
 /* Fonts */
@@ -68,12 +70,41 @@ html, body {
 .font-normal {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  font-size: 1.8rem;
 }
 
 .font-bold {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
+  font-size: 1.8rem;
 }
+
+
+.shadow {
+  box-shadow: 4px 4px 16px lighten(black, 50%);
+}
+
+
+
+h1 {
+  .font-bold;
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin-bottom: 2rem;
+  li {
+    margin-bottom: 1.2rem;
+  }
+}
+
+/* Styles */
 
 .bg-image {
   position: absolute;
@@ -113,3 +144,38 @@ header {
     }
   }
 }
+
+.info {
+  position: relative;
+  margin: 200px auto;
+  width: 80%;
+  height: 444px;
+  background-color: @green;
+  .font-normal;
+  color: white;
+  .shadow;
+}
+
+.info-contact {
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    width: 444px;
+  }
+}
+
+.social {
+  li {
+    display: inline-block;
+  }
+}
+
+.name {
+  width: 65%;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+

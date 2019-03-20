@@ -133,17 +133,41 @@ table {
 html,
 body {
   height: 100%;
+  font-size: 62.5%;
 }
 /* Colors */
 /* Fonts */
 .font-normal {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  font-size: 1.8rem;
 }
 .font-bold {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
+  font-size: 1.8rem;
 }
+.shadow {
+  box-shadow: 4px 4px 16px #808080;
+}
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+ul {
+  margin-bottom: 2rem;
+}
+ul li {
+  margin-bottom: 1.2rem;
+}
+/* Styles */
 .bg-image {
   position: absolute;
   top: 0;
@@ -170,6 +194,7 @@ header nav {
 header nav a {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  font-size: 1.8rem;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -177,4 +202,33 @@ header nav a {
 }
 header nav a:hover {
   color: #D4C512;
+}
+.info {
+  position: relative;
+  margin: 200px auto;
+  width: 80%;
+  height: 444px;
+  background-color: #708B30;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: white;
+  box-shadow: 4px 4px 16px #808080;
+}
+.info-contact {
+  display: flex;
+  justify-content: space-between;
+}
+.info-contact img {
+  width: 444px;
+}
+.social li {
+  display: inline-block;
+}
+.name {
+  width: 65%;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
