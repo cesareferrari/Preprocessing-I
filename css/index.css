@@ -134,9 +134,41 @@ html,
 body {
   height: 100%;
 }
+/* Colors */
+/* Fonts */
+.font-normal {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+.font-bold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
 .bg-image {
   height: 400px;
   background-image: url(../images/bookshelf.jpg);
   background-repeat: no-repeat;
   background-position: center center;
+}
+header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+header nav {
+  width: 80%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+header nav a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+header nav a:hover {
+  color: #D4C512;
 }

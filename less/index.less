@@ -58,9 +58,52 @@ html, body {
 }
 
 
+/* Colors */
+
+@yellow: #D4C512;
+
+
+/* Fonts */
+
+.font-normal {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.font-bold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
 .bg-image {
   height: 400px;
   background-image: url(../images/bookshelf.jpg);
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+
+
+  nav {
+    width: 80%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      .font-normal;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      &:hover {
+        color: @yellow;
+      }
+    }
+  }
 }
