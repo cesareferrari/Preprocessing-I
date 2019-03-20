@@ -197,6 +197,7 @@ ul li {
 .shadow-up {
   box-shadow: 5px 5px 16px #808080;
 }
+/* Media queries */
 /* Styles */
 .bg-image {
   position: absolute;
@@ -306,9 +307,20 @@ header nav a:hover {
   width: 80%;
   margin: auto;
 }
+@media screen and (max-width: 500px) {
+  .history {
+    flex-direction: column;
+  }
+}
 .history .education,
 .history .work {
   width: 48%;
+}
+@media screen and (max-width: 500px) {
+  .history .education,
+  .history .work {
+    width: 100%;
+  }
 }
 .history .education h2,
 .history .work h2 {
@@ -356,4 +368,9 @@ header nav a:hover {
   color: #379EE6;
   text-transform: uppercase;
   font-size: 1.5rem;
+}
+.history .education .card-work,
+.history .work .card-work {
+  border: 1px solid #708B30;
+  border-left: 12px solid #708B30;
 }

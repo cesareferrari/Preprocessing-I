@@ -138,6 +138,12 @@ ul {
   box-shadow: 5px 5px 16px lighten(black, 50%);
 }
 
+
+/* Media queries */
+
+@phone: ~"screen and (max-width: 500px)";
+
+
 /* Styles */
 
 .bg-image {
@@ -188,24 +194,27 @@ header {
   color: white;
   .shadow;
 
-  @media screen and (max-width: 500px) {
+
+//@media screen and (max-width: 500px) {
+@media @phone {
     margin-top: 4rem;
     width: 90%;
   }
 }
+
 
 .info-contact {
   display: flex;
   justify-content: space-between;
   height: 444px;
 
-  @media screen and (max-width: 500px) {
+  @media @phone {
     flex-direction: column;
     height: initial;
   }
 
   .name {
-    @media screen and (max-width: 500px) {
+    @media @phone {
       order: 2;
       width: 100%;
     }
@@ -215,7 +224,7 @@ header {
   img {
     width: 444px;
 
-    @media screen and (max-width: 500px) {
+    @media @phone {
       width: 100%;
     }
 
@@ -259,8 +268,16 @@ header {
   width: 80%;
   margin: auto;
 
+  @media @phone {
+    flex-direction: column;
+  }
+
   .education, .work {
     width: 48%;
+
+    @media @phone {
+      width: 100%;
+    }
 
     h2 {
       .font-normal;
@@ -296,6 +313,11 @@ header {
         font-size: 1.5rem;
 
       }
+    }
+
+    .card-work {
+      border: 1px solid @green;
+      border-left: 12px solid @green;
     }
 
   }
