@@ -285,6 +285,16 @@ header nav a:hover {
 .social li:first-child {
   margin-left: 0;
 }
+.social li a {
+  color: white;
+  text-decoration: none;
+}
+.social li a:hover {
+  color: #D4C512;
+}
+.social li a .fab {
+  font-size: 4rem;
+}
 .name {
   width: 65%;
   padding: 4rem;
