@@ -63,9 +63,10 @@ html, body {
 
 @yellow: #D4C512;
 @green: #708B30;
+@text-color: #204055;
 
 
-/* Fonts */
+/* Typography */
 
 .font-normal {
   font-family: 'Roboto', sans-serif;
@@ -79,12 +80,10 @@ html, body {
   font-size: 1.8rem;
 }
 
-
-.shadow {
-  box-shadow: 4px 4px 16px lighten(black, 50%);
+p {
+  line-height: 2.4rem;
+  margin-bottom: 2.4rem;
 }
-
-
 
 h1 {
   .font-bold;
@@ -103,6 +102,16 @@ ul {
     margin-bottom: 1.2rem;
   }
 }
+
+
+
+/* Effects */
+
+.shadow {
+  box-shadow: 4px 4px 16px lighten(black, 50%);
+}
+
+
 
 /* Styles */
 
@@ -149,7 +158,6 @@ header {
   position: relative;
   margin: 200px auto;
   width: 80%;
-  height: 444px;
   background-color: @green;
   .font-normal;
   color: white;
@@ -159,6 +167,7 @@ header {
 .info-contact {
   display: flex;
   justify-content: space-between;
+  height: 444px;
 
   img {
     width: 444px;
@@ -179,3 +188,8 @@ header {
   justify-content: center;
 }
 
+.summary {
+  color: @text-color;
+  padding: 2rem 4rem;
+  background-color: white;
+}

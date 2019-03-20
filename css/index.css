@@ -136,7 +136,7 @@ body {
   font-size: 62.5%;
 }
 /* Colors */
-/* Fonts */
+/* Typography */
 .font-normal {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -147,8 +147,9 @@ body {
   font-weight: 700;
   font-size: 1.8rem;
 }
-.shadow {
-  box-shadow: 4px 4px 16px #808080;
+p {
+  line-height: 2.4rem;
+  margin-bottom: 2.4rem;
 }
 h1 {
   font-family: 'Roboto', sans-serif;
@@ -166,6 +167,10 @@ ul {
 }
 ul li {
   margin-bottom: 1.2rem;
+}
+/* Effects */
+.shadow {
+  box-shadow: 4px 4px 16px #808080;
 }
 /* Styles */
 .bg-image {
@@ -207,7 +212,6 @@ header nav a:hover {
   position: relative;
   margin: 200px auto;
   width: 80%;
-  height: 444px;
   background-color: #708B30;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -218,6 +222,7 @@ header nav a:hover {
 .info-contact {
   display: flex;
   justify-content: space-between;
+  height: 444px;
 }
 .info-contact img {
   width: 444px;
@@ -231,4 +236,9 @@ header nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.summary {
+  color: #204055;
+  padding: 2rem 4rem;
+  background-color: white;
 }
