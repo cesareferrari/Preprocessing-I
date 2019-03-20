@@ -168,9 +168,30 @@ ul {
 ul li {
   margin-bottom: 1.2rem;
 }
+/* Buttons */
+.button {
+  background-color: #708B30;
+  padding: 1.6rem 3rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  box-shadow: 3px 3px 12px #808080;
+}
+.button:hover {
+  background-color: #516523;
+  box-shadow: 5px 5px 16px #808080;
+}
 /* Effects */
 .shadow {
-  box-shadow: 4px 4px 16px #808080;
+  box-shadow: 3px 3px 12px #808080;
+}
+.shadow-up {
+  box-shadow: 5px 5px 16px #808080;
 }
 /* Styles */
 .bg-image {
@@ -217,7 +238,7 @@ header nav a:hover {
   font-weight: 400;
   font-size: 1.8rem;
   color: white;
-  box-shadow: 4px 4px 16px #808080;
+  box-shadow: 3px 3px 12px #808080;
 }
 .info-contact {
   display: flex;

@@ -104,14 +104,36 @@ ul {
 }
 
 
+/* Buttons */
+
+.button {
+  background-color: @green;
+  padding: 1.6rem 3rem;
+  .font-normal;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  .shadow;
+
+  &:hover {
+    background-color: darken(@green, 10%);
+    .shadow-up;
+  }
+}
+
 
 /* Effects */
 
 .shadow {
-  box-shadow: 4px 4px 16px lighten(black, 50%);
+  box-shadow: 3px 3px 12px lighten(black, 50%);
 }
 
 
+.shadow-up {
+  box-shadow: 5px 5px 16px lighten(black, 50%);
+}
 
 /* Styles */
 
