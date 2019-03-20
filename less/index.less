@@ -72,12 +72,14 @@ html, body {
 .font-normal {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  color: @text-color;
   font-size: 1.8rem;
 }
 
 .font-bold {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
+  color: @text-color;
   font-size: 1.8rem;
 }
 
@@ -219,18 +221,12 @@ header {
 
 
 .history {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   padding: 4rem;
 
-  .education {
+  .education, .work {
     width: 48%;
-  }
-
-  .work {
-    width: 48%;
-    border: 1px solid green;
   }
 }
 
@@ -239,5 +235,25 @@ header {
   padding: 1rem 1rem 1rem 3rem;
   border: 1px solid @blue;
   border-left: 12px solid @blue;
+  margin-bottom: 2rem;
   .shadow;
+
+  h2 {
+    .font-bold;
+    font-size: 2.1rem;
+    color: lighten(@text-color, 8%);
+  }
+
+  h3 {
+    margin-bottom: 1.6rem;
+  }
+
+  h4 {
+    margin-bottom: 1.6rem;
+    .font-bold;
+    color: @blue;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+
+  }
 }
