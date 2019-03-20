@@ -256,6 +256,10 @@ header nav a:hover {
 }
 .social li {
   display: inline-block;
+  margin: 0 2rem;
+}
+.social li:first-child {
+  margin-left: 0;
 }
 .name {
   width: 65%;
