@@ -231,7 +231,7 @@ header nav a:hover {
 }
 .info {
   position: relative;
-  margin: 200px auto;
+  margin: 200px auto 0;
   width: 80%;
   background-color: #708B30;
   font-family: 'Roboto', sans-serif;
@@ -262,4 +262,26 @@ header nav a:hover {
   color: #204055;
   padding: 2rem 4rem;
   background-color: white;
+}
+.history {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+}
+.history .education {
+  width: 48%;
+}
+.history .work {
+  width: 48%;
+  border: 1px solid green;
+}
+.card {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  padding: 1rem 1rem 1rem 3rem;
+  border: 1px solid #379EE6;
+  border-left: 12px solid #379EE6;
+  box-shadow: 3px 3px 12px #808080;
 }
