@@ -134,3 +134,9 @@ html,
 body {
   height: 100%;
 }
+.bg-image {
+  height: 400px;
+  background-image: url(../images/bookshelf.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
