@@ -264,6 +264,9 @@ header nav a:hover {
   flex-direction: column;
   justify-content: center;
 }
+.name h1 {
+  color: white;
+}
 .summary {
   color: #204055;
   padding: 2rem 4rem;
@@ -272,35 +275,52 @@ header nav a:hover {
 .history {
   display: flex;
   justify-content: space-between;
-  padding: 4rem;
+  padding: 4rem 0;
+  width: 80%;
+  margin: auto;
 }
 .history .education,
 .history .work {
   width: 48%;
 }
-.card {
+.history .education h2,
+.history .work h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: #204055;
   font-size: 1.8rem;
-  padding: 1rem 1rem 1rem 3rem;
+  color: #379EE6;
+  font-size: 3.6rem;
+  margin-bottom: 3.6rem;
+}
+.history .education .card,
+.history .work .card {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #204055;
+  font-size: 1.8rem;
+  padding: 2rem 1rem 1rem 3rem;
   border: 1px solid #379EE6;
   border-left: 12px solid #379EE6;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   box-shadow: 3px 3px 12px #808080;
 }
-.card h2 {
+.history .education .card h2,
+.history .work .card h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   color: #204055;
   font-size: 1.8rem;
   font-size: 2.1rem;
   color: #2b5673;
+  margin-bottom: 2rem;
 }
-.card h3 {
+.history .education .card h3,
+.history .work .card h3 {
   margin-bottom: 1.6rem;
 }
-.card h4 {
+.history .education .card h4,
+.history .work .card h4 {
   margin-bottom: 1.6rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;

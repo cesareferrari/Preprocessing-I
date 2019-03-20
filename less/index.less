@@ -211,6 +211,10 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  h1 {
+    color: white;
+  }
 }
 
 .summary {
@@ -223,37 +227,49 @@ header {
 .history {
   display: flex;
   justify-content: space-between;
-  padding: 4rem;
+  padding: 4rem 0;
+  width: 80%;
+  margin: auto;
 
   .education, .work {
     width: 48%;
+
+    h2 {
+      .font-normal;
+      color: @blue;
+      font-size: 3.6rem;
+      margin-bottom: 3.6rem;
+    }
+
+    .card {
+      .font-normal;
+      padding: 2rem 1rem 1rem 3rem;
+      border: 1px solid @blue;
+      border-left: 12px solid @blue;
+      margin-bottom: 4rem;
+      .shadow;
+
+      h2 {
+        .font-bold;
+        font-size: 2.1rem;
+        color: lighten(@text-color, 8%);
+        margin-bottom: 2rem;
+      }
+
+      h3 {
+        margin-bottom: 1.6rem;
+      }
+
+      h4 {
+        margin-bottom: 1.6rem;
+        .font-bold;
+        color: @blue;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+
+      }
+    }
+
   }
 }
 
-.card {
-  .font-normal;
-  padding: 1rem 1rem 1rem 3rem;
-  border: 1px solid @blue;
-  border-left: 12px solid @blue;
-  margin-bottom: 2rem;
-  .shadow;
-
-  h2 {
-    .font-bold;
-    font-size: 2.1rem;
-    color: lighten(@text-color, 8%);
-  }
-
-  h3 {
-    margin-bottom: 1.6rem;
-  }
-
-  h4 {
-    margin-bottom: 1.6rem;
-    .font-bold;
-    color: @blue;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-
-  }
-}
