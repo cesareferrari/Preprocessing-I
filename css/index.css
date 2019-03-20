@@ -171,6 +171,13 @@ ul {
 ul li {
   margin-bottom: 1.2rem;
 }
+.anchor-white {
+  color: white;
+  text-decoration: none;
+}
+.anchor-white:hover {
+  color: #D4C512;
+}
 /* Buttons */
 .button {
   background-color: #708B30;
@@ -227,10 +234,10 @@ header nav a {
   font-weight: 400;
   color: #204055;
   font-size: 1.8rem;
-  color: white;
-  text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: white;
+  text-decoration: none;
 }
 header nav a:hover {
   color: #D4C512;
